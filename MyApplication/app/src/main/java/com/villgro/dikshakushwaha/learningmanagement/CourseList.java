@@ -1,6 +1,7 @@
 package com.villgro.dikshakushwaha.learningmanagement;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
@@ -26,6 +27,11 @@ public class CourseList extends AppCompatActivity  implements View.OnClickListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_course_list);
 
+        data.add(new Course("Course 1", R.drawable.assessment));
+        data.add(new Course("Course 2", R.drawable.assessment));
+        data.add(new Course("Course 3", R.drawable.assessment));
+        data.add(new Course("Course 4", R.drawable.assessment));
+
         rv_courseList = (RecyclerView) findViewById(R.id.rv_courses);
         adapter = new CourseListAdapter(this, data);
         rv_courseList.setAdapter(adapter);
@@ -34,8 +40,8 @@ public class CourseList extends AppCompatActivity  implements View.OnClickListen
         rv_courseList.addOnItemTouchListener(new RecyclerTouchListener(this, rv_courseList, new ClickListener() {
             @Override
             public void onClick(View view, int position) {
-
-
+                Intent intent = new Intent(CourseList.this,Course_Content.class);
+                startActivity(intent);
             }
 
             @Override

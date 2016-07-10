@@ -17,6 +17,13 @@
         </activity>
         <activity android:name=".CourseList">
         </activity>
+        <activity
+            android:name=".Course_Content"
+            android:label="@string/title_activity_course__content"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".PicOptions">
+        </activity>
     </application>
 
 </manifest>
