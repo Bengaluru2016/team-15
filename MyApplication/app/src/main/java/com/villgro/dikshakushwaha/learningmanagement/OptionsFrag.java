@@ -54,17 +54,17 @@ TextView tv_question;
         int id = v.getId();
         switch(id){
             case R.id.iv_o1:
-                Toast.makeText(getActivity(),"Correct",Toast.LENGTH_SHORT);
+                Toast.makeText(getActivity(),"Correct",Toast.LENGTH_SHORT).show();
 
                 break;
             case R.id.iv_o2:
-                Toast.makeText(getActivity(),"Wrong",Toast.LENGTH_SHORT);
+                Toast.makeText(getActivity(),"Wrong",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.iv_o3:
-                Toast.makeText(getActivity(),"Wrong",Toast.LENGTH_SHORT);
+                Toast.makeText(getActivity(),"Wrong",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.iv_o4:
-                Toast.makeText(getActivity(),"Wrong",Toast.LENGTH_SHORT);
+                Toast.makeText(getActivity(),"Wrong",Toast.LENGTH_SHORT).show();
                 break;
         }
     }

@@ -6,9 +6,11 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
+import android.support.v7.widget.Toolbar;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.RelativeLayout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,6 +29,12 @@ public class CourseList extends AppCompatActivity  implements View.OnClickListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_course_list);
 
+        RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.app_bar);
+        Toolbar toolbar = (Toolbar) relativeLayout.findViewById(R.id.kushwhahah);
+toolbar.setTitle("Courses");
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         data.add(new Course("Course 1", R.drawable.assessment));
         data.add(new Course("Course 2", R.drawable.assessment));
         data.add(new Course("Course 3", R.drawable.assessment));

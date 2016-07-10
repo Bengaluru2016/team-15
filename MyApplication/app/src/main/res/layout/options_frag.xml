@@ -12,17 +12,20 @@
         android:layout_height="80dp"
         android:clickable="true"
         android:elevation="4dp"
+        android:padding="4dp"
         card_view:cardCornerRadius="4dp"
         card_view:cardUseCompatPadding="true"
         >
 
         <TextView
             android:layout_width="match_parent"
+            android:padding="14dp"
             android:layout_height="match_parent"
             android:gravity="center"
             android:id="@+id/tv_question"
-            android:text="@string/hello_blank_fragment"
-            android:textAppearance="?android:attr/textAppearanceMedium"/>
+            android:text="Pick a minion!!"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="20dp"/>
     </android.support.v7.widget.CardView>
 
     <LinearLayout
@@ -43,10 +46,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
+                android:padding="4dp"
                 android:layout_weight="0.5"
-                android:background="@drawable/assessment"
                 android:scaleType="centerCrop"
-                android:src="@drawable/assessment"/>
+                android:src="@drawable/minion"/>
 
             <ImageButton
                 android:id="@+id/iv_o2"
@@ -54,7 +57,8 @@
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="0.5"
-                android:background="@drawable/assessment"
+                android:padding="4dp"
+                android:src="@drawable/o2"
                 android:scaleType="centerCrop"/>
         </LinearLayout>
 
@@ -70,10 +74,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
+                android:padding="4dp"
                 android:layout_weight="0.5"
-                android:background="@drawable/assessment"
                 android:scaleType="centerCrop"
-                android:src="@drawable/assessment"/>
+                android:src="@drawable/o3"/>
 
             <ImageButton
                 android:id="@+id/iv_o4"
@@ -81,10 +85,11 @@
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="0.5"
-                android:background="@drawable/assessment"
+                android:padding="4dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/assessment"/>
+                android:src="@drawable/cat"/>
         </LinearLayout>
     </LinearLayout>
+
 
 </RelativeLayout>

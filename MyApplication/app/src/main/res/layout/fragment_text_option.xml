@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.villgro.dikshakushwaha.learningmanagement.OptionsFrag"
+    >
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/cv1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:clickable="true"
+        android:elevation="4dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardUseCompatPadding="true"
+        >
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           android:textColor="@color/colorPrimaryText"
+            android:padding="16dp"
+            android:text="Q Who is the \n    founder  of\n    Villgro?"
+            android:textSize="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+    </android.support.v7.widget.CardView>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/cv1">
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cv1"
+
+        android:orientation="vertical">
+
+
+
+           <RadioGroup
+               android:id="@+id/radiogroup"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:paddingTop="25dp"
+               android:paddingLeft="16dp"
+               android:paddingRight="16dp"
+               android:paddingBottom="16dp">
+            <RadioButton
+                android:text="Bill Gate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/radioButton"
+                />
+
+
+
+            <RadioButton
+                android:text="Paul Basil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton2"/>
+               <RadioButton
+                   android:text="Elon Musk"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/radioButton3"/>
+
+
+
+            <RadioButton
+                android:text="Neil Armstrong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton4"/>
+
+
+           </RadioGroup>
+    </LinearLayout>
+</ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Submit"
+        android:id="@+id/bt_submit"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        />
+
+</RelativeLayout>

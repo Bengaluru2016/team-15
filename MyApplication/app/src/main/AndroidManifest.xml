@@ -19,10 +19,12 @@
         </activity>
         <activity
             android:name=".Course_Content"
-            android:label="@string/title_activity_course__content"
+            android:label="Initial Assessment"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".PicOptions">
+        <activity android:name=".TextOptions"
+                  android:label="Initial Assessment"
+            >
         </activity>
     </application>
 

@@ -44,7 +44,6 @@
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="0.5"
-                android:background="@drawable/assessment"
                 android:scaleType="centerCrop"
                 android:src="@drawable/assessment"/>
 
